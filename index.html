@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css">
+</head>
+
+<body onload="mudouTamanho()" onresize="mudouTamanho()">
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo Nutritionist">
+                <h1>Nutritionist</h1>
+            </div>
+            <menu class="options">
+                <img src="imagens/icon-menu.png" alt="Ícone Menu" id="iconMenu" onclick="clicouNoIcone()">
+                <ul id="menuList">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Preços</a></li>
+                    <li class="btn-contact"><a href="#">Contato</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <section id="apresentation">
+            <div class="image-apresentation">
+                <!-- Team um background-image no css -->
+            </div>
+            <div class="text-apresentation">
+                <h3>Transforme Sua ❤️ Saúde Com</h3>
+                <h2>Coaching Nutricional Personalizado</h2>
+                <p>Bem-vindo ao Nutricionista, seu parceiro para alcançar a saúde ideal por meio de treinamento
+                    nutricional personalizado. Nossos nutricionistas certificados estão aqui para orientá-lo em sua
+                    jornada para perder peso, fornecendo planos personalizados e suporte contínuo. Comece sua
+                    transformação hoje e experimente o poder do coaching nutricional personalizado.</p>
+                <div class="buttons">
+                    <p class="get-starter">Comece hoje mesmo</p>
+                    <p class="bood-demo">Agende uma demonstração</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section id="recursos">
+        <h2>Recursos </h2>
+        <p>
+            Bem-vindo à Seção de Recursos do Nutritionist, seu destino final para tudo relacionado a nutrição e
+            bem-estar.
+        </p>
+        <div class="cards-container">
+            <div class="card01">
+                <div class="card-header">
+                    <img src="imagens/icon-flower.png" alt="icone de um flor com fundo verde">
+                    <h3>
+                        Planos de nutrição personalizados
+                    </h3>
+                </div>
+                <p>
+                    Receba um plano nutricional personalizado, projetado especificamente para seu corpo e objetivos.
+                    Nossos nutricionistas certificados considerarão suas necessidades exclusivas, preferências
+                    alimentares e condições de saúde para criar um plano que melhor se adapte a você.
+                </p>
+            </div>
+            <div class="card01">
+                <div class="card-header">
+                    <img src="imagens/icon-certifield.png" alt="icone de um certificado com fundo verde">
+                    <h3>
+                        Orientação de Nutricionistas Certificados
+                    </h3>
+                </div>
+                <p>
+                    Nossa equipe de nutricionistas experientes e certificados fornecerá orientação e suporte
+                    profissional durante toda a sua jornada. Eles responderão às suas perguntas, abordarão suas
+                    preocupações e o manterão motivado enquanto você trabalha para atingir seus objetivos.
+                </p>
+            </div>
+            <div class="card01">
+                <div class="card-header">
+                    <img src="imagens/icon-food.png" alt="icone de um talher com fundo verde">
+                    <h3>
+                        Rastreamento e Análise de Alimentos
+                    </h3>
+                </div>
+                <p>
+                    Acompanhe facilmente sua ingestão de alimentos usando nosso aplicativo fácil de usar. Nossos
+                    nutricionistas analisarão seus dados para fornecer informações sobre seus hábitos alimentares,
+                    ajudá-lo a identificar áreas de melhoria e fazer recomendações personalizadas.
+                </p>
+            </div>
+            <div class="card01">
+                <div class="card-header">
+                    <img src="imagens/icon-plane.png" alt="icone de um talher com fundo verde">
+                    <h3>
+                        Planejamento de refeições e receitas
+                    </h3>
+                </div>
+                <p>
+                    Acesse uma vasta coleção de receitas deliciosas e saudáveis, adaptadas às suas necessidades
+                    dietéticas. Nossos nutricionistas também criarão planos de refeições personalizados, tornando mais
+                    fácil para você se manter no caminho certo e desfrutar de refeições nutritivas.
+                </p>
+            </div>
+            <div class="card01">
+                <div class="card-header">
+                    <img src="imagens/icon-lifestyle.png" alt="icone de um talher com fundo verde">
+                    <h3>
+                        Coaching de Estilo de Vida e Comportamento
+                    </h3>
+                </div>
+                <p>
+                    Alcançar resultados sustentáveis ​​requer mais do que apenas um plano alimentar. Nossos
+                    nutricionistas trabalharão com você para desenvolver hábitos saudáveis, abordar a alimentação
+                    emocional e fornecer estratégias para superar obstáculos ao longo do caminho.
+                </p>
+            </div>
+            <div class="card01">
+                <div class="card-header">
+                    <img src="imagens/icon-lifestyle.png" alt="icone de um talher com fundo verde">
+                    <h3>
+                        Educação Nutricional e Oficinas
+                    </h3>
+                </div>
+                <p>
+                    Amplie seu conhecimento sobre nutrição por meio de artigos informativos e oficinas educativas. Nossos nutricionistas irão equipá-lo com o conhecimento e as ferramentas para fazer escolhas informadas para o sucesso a longo prazo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const iconMenu = document.getElementById("iconMenu");
+        const menuList = document.getElementById("menuList");
+
+        function mudouTamanho() {
+            if (window.innerWidth <= 700) {
+                iconMenu.style.display = "block"; // Exibe o ícone do menu
+                menuList.style.display = "none"; // Oculta o menu por padrão
+            } else {
+                iconMenu.style.display = "none"; // Oculta o ícone
+                menuList.style.display = "flex"; // Mostra o menu completo
+            }
+        }
+
+        function clicouNoIcone() {
+            // Alterna a exibição do menu
+            if (menuList.style.display === "none" || menuList.style.display === "") {
+                menuList.style.display = "flex"; // Mostra o menu
+            } else {
+                menuList.style.display = "none"; // Oculta o menu
+            }
+        }
+    </script>
+</body>
+
+</html>

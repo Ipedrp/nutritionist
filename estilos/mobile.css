@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* Oculta o menu UL em telas menores */
+@media screen and (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    menu.options {
+        position: relative;
+    }
+
+    menu.options>img#iconMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    menu.options>ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #1A3129;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    menu.options>ul>li {
+        margin: 5px 0;
+        text-align: right;
+    }
+
+    /* section mulher - header */
+
+    header>section#apresentation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        max-height: auto;
+        width: 100%;
+        background-color: white;
+    }
+
+    header>section#apresentation>div.image-apresentation {
+        background-image: url("../imagens/person-woman.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        border-radius: 0px 0px 30px 30px;
+
+    }
+
+    header>section#apresentation>div.text-apresentation {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    header>section#apresentation>div.text-apresentation>h3 {
+        font-family: "Urbanist", serif;
+        color: #1A3129;
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    header>section#apresentation>div.text-apresentation>h2 {
+        font-family: "Urbanist", serif;
+        color: #1A3129;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    header>section#apresentation>div.text-apresentation>p {
+        font-family: "Urbanist", serif;
+        color: #1A3129;
+        font-size: 1em;
+        text-align: center;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+
+    header>section#apresentation>div.text-apresentation>div.buttons>p.get-starter,
+    header>section#apresentation>div.text-apresentation>div.buttons>p.bood-demo {
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        width: 150px;
+        margin: 5px;
+
+    }
+
+    header>section#apresentation>div.text-apresentation>div.buttons>p.get-starter {
+        background-color: #CBEA7B;
+    }
+
+    header>section#apresentation>div.text-apresentation>div.buttons>p.bood-demo {
+        background-color: lightgray;
+    }
+
+    header>section#apresentation>div.text-apresentation>div.buttons {
+        display: flex;
+
+    }
+
+    /* section - recursos */
+
+    section#recursos {
+        background-color: white;
+        padding: 10px;
+    }
+
+    section#recursos>h2 {
+        text-align: center;
+        font-family: "Urbanist", serif;
+        color: #1A3129;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    section#recursos>p {
+        font-family: "Urbanist", serif;
+        color: #1A3129;
+        font-size: 1em;
+        text-align: center;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+
+    section#recursos>div.cards-container {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    section#recursos>div.cards-container>div.card01 {
+        background-color: #E5F5BD;
+        margin: 10px 4px;
+        padding: 10px 10px;
+        border-radius: 7px;
+    }
+
+    section#recursos>div.cards-container>div.card01>div.card-header {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+    }
+
+    section#recursos>div.cards-container>div.card01>div.card-header>img {
+        width: 70px;
+    }
+
+    section#recursos>div.cards-container>div.card01>div.card-header>h3 {
+        display: inline;
+        color: #1A3129;
+        font-size: 1.3em;
+        margin: 15px 0;
+    }
+
+    section#recursos>div.cards-container>div.card01>p {
+        font-family: "Urbanist", serif;
+        color: #1A3129;
+        font-size: 1em;
+        text-align: justify;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+}
