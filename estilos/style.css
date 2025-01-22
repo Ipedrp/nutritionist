@@ -208,3 +208,67 @@ section#recursos>div.cards-container>div.card01>p {
     line-height: 1.8;
     margin: 15px 0;
 }
+
+/* section blogs */
+
+section#blogs{
+    background-color: white;
+    padding: 10px;
+}
+
+section#blogs>h2 {
+    text-align: center;
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+section#blogs>p {
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+section#blogs>article.blog-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+ 
+}
+section#blogs>article.blog-container> div.blog-item{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    background-color: #E5F5BD;
+    border-radius: 10px;
+    padding: 10px;
+}
+section#blogs>article.blog-container> div.blog-item>div.blog-image>img{
+    width: 100%;
+    height: auto;
+}
+
+section#blogs>article.blog-container> div.blog-item>div.blog-text>p{
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: start;
+}
+section#blogs>article.blog-container> div.blog-item>div.blog-text>h4{
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-size: 1.3em;
+    text-align: start;
+    margin: 4px 0px 16px 0px;
+}
+
+
