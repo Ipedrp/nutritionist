@@ -11,7 +11,8 @@
 }
 
 body {
-    background-color: rgb(137, 19, 19);
+    /* background-color: rgb(137, 19, 19); */
+    background-color: white;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -419,7 +420,7 @@ footer#footer {
 
 footer#footer>div.footer-header {
     display: flex;
-    flex-flow: row wrap;  
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #1A3129;
@@ -476,16 +477,18 @@ footer#footer>div.footer-header>div.to-top-footer>div.container-image-footer {
     background-color: #234338;
     border-radius: 50%;
 }
+
 footer#footer>div.footer-header>div.to-top-footer>div.container-image-footer:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
+
 footer#footer>div.footer-header>div.to-top-footer>img {
     height: 30px;
 }
 
 footer#footer>div.footer-footer {
     display: flex;
-    flex-flow: row wrap;  
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #234338;
@@ -494,23 +497,387 @@ footer#footer>div.footer-footer {
     margin-top: 40px;
     flex: 50%;
 }
+
 footer#footer>div.footer-footer>p {
     color: white;
 }
+
 footer#footer>div.footer-footer>div.info-more {
-    display: flex;  
-    flex-flow: row wrap;  
+    display: flex;
+    flex-flow: row wrap;
     gap: 10px;
 }
+
 footer#footer>div.footer-footer>div.info-more>div.info-more-item {
     display: flex;
-    flex-flow: row wrap;  
+    flex-flow: row wrap;
     gap: 10px;
-    background-color: #234338   ;
+    background-color: #234338;
     padding: 15px 30px;
     border-radius: 10px;
     border: 1px solid rgba(129, 136, 133, 0.548);
 }
+
 footer#footer>div.footer-footer>div.info-more>div.info-more-item>p {
     color: white;
+}
+
+
+/* estilos para a TELA SOBRE */
+
+header>div#container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+}
+
+header>div#contianer-image>img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* section apresentation */
+section#apresentation-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    
+}
+
+section#apresentation-about>div.text-apresentation-about {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.085);
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    padding: 20px;
+    margin: 20px;
+}
+
+section#apresentation-about>div.text-apresentation-about>h2 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #1A3129;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section#apresentation-about>div.text-apresentation-about>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* section our story*/
+
+section#container-our-story {
+    background-color: white;
+    width: 100%;
+}
+
+section#container-our-story>div.title-our-story {
+    padding: 20px;
+}
+
+section#container-our-story>div.title-our-story>h3 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #1A3129;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section#container-our-story>div.title-our-story>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+}
+
+section#container-our-story>div.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+
+}
+
+section#container-our-story>div.card-container>div.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 263px;
+    padding: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #CBEA7B;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+section#container-our-story>div.card-container>div.card:nth-child(odd) {
+    flex-direction: row;
+}
+
+section#container-our-story>div.card-container>div.card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+section#container-our-story>div.card-container>div.card>div.card-image {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+section#container-our-story>div.card-container>div.card>div.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#container-our-story>div.card-container>div.card>div.card-text {
+    background-color: white;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    justify-items: flex-start;
+    align-content: center;
+    overflow: hidden;
+
+}
+
+
+section#container-our-story>div.card-container>div.card>div.card-text>h3 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #1A3129;
+    margin-bottom: 6px;
+    padding-left: 10px;
+}
+
+section#container-our-story>div.card-container>div.card>div.card-text>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+
+}
+
+section#container-our-story>div.card-container>div.card>div.card-text>p.date {
+    font-family: "Urbanist", serif;
+    color: rgb(33, 33, 32);
+    font-size: 1em;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0px;
+    padding-left: 10px;
+
+}
+
+/* Section Conquist */
+
+section#conquist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+section#conquist>div.title {
+    flex: 1;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    align-content: center;
+    justify-items: center;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+section#conquist>div.title>h2 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #1A3129;
+
+}
+
+section#conquist>div.title>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+section#conquist>div.content {
+    flex: 1;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    gap: 10px;
+}
+
+section#conquist>div.content>div.card {
+    width: 48%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: self-start;
+    background-color: rgb(251 251 251);
+    border: 1px solid #CBEA7B;
+    border-radius: 10px;
+}
+
+section#conquist>div.content>div.card>div.card-header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+section#conquist>div.content>div.card>div.card-header>h3 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #1A3129;
+    align-content: center;
+    margin-left: 10px;
+}
+
+section#conquist>div.content>div.card>div.card-main {
+    padding: 10px;
+
+}
+
+section#conquist>div.content>div.card>div.card-main>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 18px;
+
+}
+
+/* Section Proud */
+
+
+section#proud {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251 251 251);
+    box-shadow: 0px 1px 6px 1px #00000082;
+    border-radius: 10px;
+    width: 85%;
+    height: 250px;
+    margin: 5% auto;
+    gap: 20px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* section#proud > img {
+    position: absolute;
+    top: -10px; 
+    left: -2px; 
+    transform: rotate(15deg); 
+    width: 120px; 
+    height: auto;
+} */
+
+/* section#proud > img.img01 {
+    position: absolute;
+    bottom: -10px; 
+    right: -20px;
+    width: 120px; 
+    height: auto;
+} */
+
+/* Primeira imagem no canto superior direito */
+section#proud > img:first-of-type {
+    position: absolute;
+    top: -10px; /* Ajuste fino para o posicionamento */
+    left: -2px; /* Ajuste fino para o canto direito */
+    transform: rotate(20deg); /* Inclinação da imagem */
+    width: 120px;
+    height: auto;
+}
+
+/* Segunda imagem no canto inferior esquerdo */
+section#proud > img.img01 {
+    position: absolute;
+    bottom: -20px; /* Ajuste fino para a posição inferior */
+    right: -20px; /* Ajuste fino para o canto esquerdo */
+    width: 120px;
+    height: auto;
+}
+
+section#proud>div.text {
+    background-color: rgb(251 251 251);
+    width: 65%;
+    height: 100px;
+    align-content: center;
+}
+section#proud>div.text>h2 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #1A3129;
+    margin: 10px 0px;
+}
+section#proud>div.text>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+section#proud>div.button {
+    background-color: rgb(251 251 251);
+    padding: 10px 0px;
+}
+section#proud>div.button>button {
+    border: none;
+    padding: 12px 30px;
+    background-color: #CBEA7B;
+    color: #1A3129;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 0px auto;
 }

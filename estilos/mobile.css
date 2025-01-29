@@ -252,21 +252,196 @@
 
     }
 
-
     footer#footer>div.footer-footer {
         margin-top: 0px;
-        flex-flow: column wrap;  
-    justify-content: space-between;
-    align-items: center;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     footer#footer>div.footer-footer>div.info-more {
-        display: inline;  
+        display: inline;
 
     }
+
     footer#footer>div.footer-footer>div.info-more>div.info-more-item {
         margin-bottom: 20px;
 
+    }
+
+    /* estilos para a TELA SOBRE */
+
+    header>div#container-image>img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* section apresentation */
+    section#apresentation-about>div.text-apresentation-about>p {
+        font-family: "Urbanist", serif;
+        color: rgb(23, 23, 22);
+        font-size: 1em;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    /* section our story */
+
+    section#container-our-story>div.card-container {
+        background-color: white;
+        margin-top: 3px;
+
+    }
+
+    section#container-our-story>div.card-container>div.card {
+        display: inline-block;
+        background-color: #CBEA7B;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        height: auto;
+
+
+    }
+
+    section#container-our-story>div.card-container>div.card>div.card-image>img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+        margin-right: 0px;
+
+    }
+
+    section#container-our-story>div.card-container>div.card>div.card-text {
+        background-color: white;
+        margin-top: 7px;
+        padding: 15px;
+        height: auto;
+
+    }
+
+
+    section#container-our-story>div.card-container>div.card>div.card-text>h3 {
+        color: #1A3129;
+        font-family: "Urbanist", serif;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 0px;
+
+    }
+
+    section#container-our-story>div.card-container>div.card>div.card-text>p {
+        font-family: "Urbanist", serif;
+        color: #484844ff;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: justify;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+
+    section#container-our-story>div.card-container>div.card>div.card-text>p.date {
+        font-family: "Urbanist", serif;
+        color: rgb(33, 33, 32);
+        font-size: 1em;
+        font-weight: 500;
+        text-align: justify;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+
+    /* Section conquist */
+
+    section#conquist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+
+    section#conquist>div.content {
+        flex: 1;
+        background-color: white;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section#conquist>div.content>div.card {
+        background-color: rgb(251 251 251);
+        width: 98%;
+        height: 200px;
+    }
+
+    section#conquist>div.content>div.card>div.card-main>p {
+        text-align: justify;
+    }
+
+
+    /* Section Proud */
+    section#proud {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: rgb(251 251 251);
+        width: 90%;
+        height: auto;
+        margin: 15px auto;
+        padding: 12px;
+        border-radius: 10px;
+
+    }
+
+    /* Primeira imagem no canto superior direito */
+    section#proud>img:first-of-type {
+        position: absolute;
+        top: -30px;
+        left: -25px;
+        transform: rotate(15deg);
+        width: 120px;
+        height: auto;
+    }
+
+    section#proud>img.img01 {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 120px;
+        height: auto;
+        
+    }
+
+    section#proud>div.text {
+        background-color: rgb(251 251 251);
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    section#proud>div.button {
+        display: inline-block;
+        background-color: rgb(251 251 251);
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    section#proud>div.button>button {
+        width: 100%;
     }
 
 
