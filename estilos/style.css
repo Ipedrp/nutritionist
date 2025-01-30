@@ -30,6 +30,7 @@ nav#navbar {
 nav#navbar>div.logo {
     display: flex;
     gap: 15px;
+    margin-left: 10px;
 }
 
 nav#navbar>div.logo>img {
@@ -337,16 +338,11 @@ button.btn-inactive {
     border: none;
 }
 
-button.btn-active:hover, button.btn-inactive:hover{
+button.btn-active:hover,
+button.btn-inactive:hover {
     cursor: pointer;
 }
 
-/* section#pricing>div.btn-pricing>button.btn-yearly:hover {
-    background-color: #1A3129;
-    color: white;
-    cursor: pointer;
-
-} */
 
 section#pricing>article.pricing-container {
     display: grid;
@@ -384,7 +380,7 @@ section#pricing>article.pricing-container>div.pricing-item>p {
 }
 
 section#pricing>article.pricing-container>div.pricing-item>p.pricing-monthly {
-  display: inline-block;
+    display: inline-block;
 }
 
 section#pricing>article.pricing-container>div.pricing-item>p.pricing-yearly {
@@ -601,6 +597,7 @@ section#container-our-story {
 
 section#container-our-story>div.title-our-story {
     padding: 20px;
+    margin: 30px 0px;
 }
 
 section#container-our-story>div.title-our-story>h3 {
@@ -726,7 +723,7 @@ section#conquist>div.title {
     align-content: center;
     justify-items: center;
     padding: 10px;
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 section#conquist>div.title>h2 {
@@ -734,6 +731,7 @@ section#conquist>div.title>h2 {
     font-weight: bold;
     font-size: 1.5em;
     color: #1A3129;
+    margin-bottom: 15px;
 
 }
 
@@ -818,42 +816,23 @@ section#proud {
     height: 250px;
     margin: 5% auto;
     gap: 20px;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
-/* section#proud > img {
+section#proud>img:first-of-type {
     position: absolute;
-    top: -10px; 
-    left: -2px; 
-    transform: rotate(15deg); 
-    width: 120px; 
-    height: auto;
-} */
-
-/* section#proud > img.img01 {
-    position: absolute;
-    bottom: -10px; 
-    right: -20px;
-    width: 120px; 
-    height: auto;
-} */
-
-/* Primeira imagem no canto superior direito */
-section#proud > img:first-of-type {
-    position: absolute;
-    top: -10px; /* Ajuste fino para o posicionamento */
-    left: -2px; /* Ajuste fino para o canto direito */
-    transform: rotate(20deg); /* Inclinação da imagem */
+    top: -10px;
+    left: -2px;
+    transform: rotate(20deg);
     width: 120px;
     height: auto;
 }
 
-/* Segunda imagem no canto inferior esquerdo */
-section#proud > img.img01 {
+section#proud>img.img01 {
     position: absolute;
-    bottom: -20px; /* Ajuste fino para a posição inferior */
-    right: -20px; /* Ajuste fino para o canto esquerdo */
+    bottom: -20px;
+    right: -20px;
     width: 120px;
     height: auto;
 }
@@ -864,6 +843,7 @@ section#proud>div.text {
     height: 100px;
     align-content: center;
 }
+
 section#proud>div.text>h2 {
     font-family: "Urbanist", serif;
     font-weight: bold;
@@ -871,6 +851,7 @@ section#proud>div.text>h2 {
     color: #1A3129;
     margin: 10px 0px;
 }
+
 section#proud>div.text>p {
     font-family: "Urbanist", serif;
     color: rgb(23, 23, 22);
@@ -883,6 +864,7 @@ section#proud>div.button {
     background-color: rgb(251 251 251);
     padding: 10px 0px;
 }
+
 section#proud>div.button>button {
     border: none;
     padding: 12px 30px;
@@ -892,3 +874,217 @@ section#proud>div.button>button {
     font-weight: bold;
     margin: 0px auto;
 }
+
+/* estilos para a TELA PREÇO  */
+
+header>div#container-our-pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251 251 251);
+    border-radius: 10px;
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    padding: 4%;
+}
+
+header>div#container-our-pricing>div.content-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imagens/abstract03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 200px
+}
+
+header>div#container-our-pricing>div.content-text {
+    text-align: center;
+    margin-top: 30px;
+    height: 18%;
+}
+
+header>div#container-our-pricing>div.content-text>h2 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #1A3129;
+    margin: 10px 0px;
+}
+
+header>div#container-our-pricing>div.content-text>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+/* Section Plan */
+
+section#plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: 98%;
+    height: auto;
+    margin: 0px auto;
+}
+
+section#plan>div.btn-pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+    background-color: rgba(211, 211, 211, 0.085);
+    border-radius: 10px;
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    padding: 20px;
+    width: 300px;
+}
+
+section#plan>p {
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+section#plan>article.container-plan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+section#plan > article.container-plan > div.card {
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    background-color: rgba(211, 211, 211, 0.085);
+    border: 1px solid rgba(26, 49, 41, 0.434);   
+    border-radius: 10px;
+    padding: 40px;
+}
+
+section#plan > article.container-plan > div.card> div.card-header {
+    width: 100%;
+    max-height: 15%;
+    margin: 12px 0px;
+
+}
+section#plan > article.container-plan > div.card> div.card-header> h2 {
+    text-align: start;
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-size: 1.5em;
+
+}
+section#plan > article.container-plan > div.card> div.card-header> p{
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: start;
+    margin: 10px 0px;
+
+}
+section#plan > article.container-plan > div.card> div.card-main {
+    width: 100%;
+    max-height: 65%;
+    background-color: #E5F5BD;
+    border-radius: 10px;
+    border: 1px solid rgb(26, 49, 41, 0.434);
+    margin: 12px 0px;
+    padding: 5px;
+}
+section#plan > article.container-plan > div.card> div.card-main> p {
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: start;
+    margin: 8px 0px;
+    border-bottom: 1px solid rgba(26, 49, 41, 0.434);
+    padding: 0px 10px 10px 10px;
+}
+
+section#plan > article.container-plan > div.card> div.card-footer {
+    width: 100%;
+    max-height: 30%;
+    margin: 12px 0px; 
+}
+
+section#plan > article.container-plan > div.card> div.card-footer> div.warning {
+    background-color: #1A3129;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 7px 0px;
+
+}
+section#plan > article.container-plan > div.card> div.card-footer> div.warning> p {
+    font-family: "Urbanist", serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 22px;
+}
+section#plan > article.container-plan > div.card> div.card-footer> p {
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: start;
+    margin: 8px 0px;
+}
+
+section#plan > article.container-plan > div.card> div.card-footer> p.pricing-monthly {
+    display: inline-block;
+}
+
+section#plan > article.container-plan > div.card> div.card-footer> p.pricing-yearly {
+    display: none;
+}
+
+section#plan > article.container-plan > div.card> div.card-footer>p.pricing-monthly>span {
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+section#plan > article.container-plan > div.card> div.card-footer>p.pricing-yearly>span {
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+section#plan > article.container-plan > div.card> div.card-footer>button {
+    font-family: "Urbanist", serif;
+    background-color: #CBEA7B;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+}
+section#plan > article.container-plan > div.card> div.card-footer>button:hover {
+    background-color: #1A3129;
+    color: white;
+    cursor: pointer;
+}
+

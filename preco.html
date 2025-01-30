@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo Nutritionist">
+                <h1>Nutritionist</h1>
+            </div>
+            <menu class="options">
+                <img src="imagens/icon-menu.png" alt="Ícone Menu" id="iconMenu" onclick="clicouNoIcone()">
+                <ul id="menuList">
+                    <li><a href="index.html" target="_self" rel="noopener noreferrer">Início</a></li>
+                    <li><a href="sobre.html" target="_self" rel="noopener noreferrer">Sobre</a></li>
+                    <li><a href="preco.html" target="_self" rel="noopener noreferrer">Preços</a></li>
+                    <li class="btn-contact"><a href="#">Contato</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <div id="container-our-pricing">
+            <div class="content-image">
+                <img src="imagens/icon-logo-container.png" alt="logo com quadrados ao redor">
+            </div>
+            <div class="content-text">
+                <h2>Nossos Preços</h2>
+                <p>No Nutritionist, oferecemos opções de preços flexíveis para acomodar suas necessidades e orçamento
+                    exclusivos. <br> Nosso objetivo é fornecer a você um treinamento nutricional personalizado
+                    excepcional, acessível e adaptado às suas necessidades. <br> Escolha um dos nossos três planos
+                    abaixo e dê o primeiro passo para um estilo de vida mais saudável</p>
+            </div>
+        </div>
+    </header>
+    <section id="plan">
+        <div class="btn-pricing">
+            <button class="btn-monthly btn-active">Mensal</button>
+            <button class="btn-yearly btn-inactive">Anual</button>
+        </div>
+        <p>Economize 50% anualmente</p>
+        <article class="container-plan">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Plano Basic</h2>
+                    <p>Até 50% de desconto no plano anual</p>
+                </div>
+                <div class="card-main">
+                    <p>Plano nutricional personalizado e adaptado aos seus objetivos e preferências alimentares.</p>
+                    <p>Acesso ao nosso aplicativo móvel para rastreamento conveniente de refeições e monitoramento do
+                        progresso.</p>
+                    <p>Suporte por e-mail para responder às suas dúvidas e preocupações.</p>
+                    <p>Check-ins regulares com um nutricionista dedicado para avaliar seu progresso e fornecer
+                        orientação.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="pricing-monthly"><span>R$49</span>/mês</p>
+                    <p class="pricing-yearly"><span>R$398</span>/ano</p>
+                    <button>Escolha o plano</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Plano Premium</h2>
+                    <p>Até 50% de desconto no plano anual</p>
+                </div>
+                <div class="card-main">
+                    <p>Todas as funcionalidades incluídas no Plano Básico.</p>
+                    <p>Consultas individuais por vídeo com seu nutricionista dedicado para orientação e suporte mais
+                        personalizados.</p>
+                    <p>Recomendações de receitas e assistência no planejamento de refeições.</p>
+                    <p>Suporte prioritário por e-mail para respostas mais rápidas às suas dúvidas.</p>
+                    <p>Recursos e guias educacionais para aprofundar sua compreensão sobre nutrição e hábitos saudáveis.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <p class="pricing-monthly"><span>R$79</span>/mês</p>
+                    <p class="pricing-yearly"><span>R$698</span>/ano</p>
+                    <button>Escolha o plano</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Plano Ultimate</h2>
+                    <p>Até 50% de desconto no plano anual</p>
+                </div>
+                <div class="card-main">
+                    <p>Todos os recursos incluídos no Plano Premium.</p>
+                    <p>Acesso ilimitado a consultas por vídeo com seu nutricionista dedicado para suporte e
+                        responsabilidade contínuos.</p>
+                    <p>Ferramentas avançadas de monitoramento de progresso para monitorar seu peso, medidas corporais e
+                        metas de condicionamento físico.</p>
+                    <p>Planos de refeições personalizados e sugestões de receitas com base em suas preferências e
+                        necessidades nutricionais.</p>
+                    <p>Suporte prioritário por e-mail e telefone para assistência imediata.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="warning">
+                        <p>O Plano Ultimate foi desenvolvido para indivíduos comprometidos em alcançar resultados
+                            significativos e que exigem o mais alto nível de suporte e personalização.</p>
+                    </div>
+                    <p class="pricing-monthly"><span>R$99</span>/mês</p>
+                    <p class="pricing-yearly"><span>R$1098</span>/ano</p>
+                    <button>Escolha o plano</button>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+
+
+    <script>
+
+        function scrollToTo() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+
+        const iconMenu = document.getElementById("iconMenu");
+        const menuList = document.getElementById("menuList");
+
+        function mudouTamanho() {
+            if (window.innerWidth <= 700) {
+                iconMenu.style.display = "block"; // Exibe o ícone do menu
+                menuList.style.display = "none"; // Oculta o menu por padrão
+            } else {
+                iconMenu.style.display = "none"; // Oculta o ícone
+                menuList.style.display = "flex"; // Mostra o menu completo
+            }
+        }
+
+        function clicouNoIcone() {
+            // Alterna a exibição do menu
+            if (menuList.style.display === "none" || menuList.style.display === "") {
+                menuList.style.display = "flex"; // Mostra o menu
+            } else {
+                menuList.style.display = "none"; // Oculta o menu
+            }
+        }
+
+        const btnMonthly = document.querySelector('.btn-monthly');
+        const btnYearly = document.querySelector('.btn-yearly');
+        const pricingMonthly = document.querySelectorAll('.pricing-monthly');
+        const pricingYearly = document.querySelectorAll('.pricing-yearly');
+
+        function togglePricing(isYearly) {
+            btnMonthly.classList.toggle('btn-active', !isYearly);
+            btnMonthly.classList.toggle('btn-inactive', isYearly);
+            btnYearly.classList.toggle('btn-active', isYearly);
+            btnYearly.classList.toggle('btn-inactive', !isYearly);
+
+            pricingMonthly.forEach(item => item.style.display = isYearly ? 'none' : 'inline-block');
+            pricingYearly.forEach(item => item.style.display = isYearly ? 'inline-block' : 'none');
+        }
+
+
+        btnYearly.addEventListener('mouseenter', () => togglePricing(true));
+        btnMonthly.addEventListener('mouseenter', () => togglePricing(false));
+
+
+    </script>
+</body>
+
+</html>
