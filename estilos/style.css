@@ -317,7 +317,7 @@ section#pricing>div.btn-pricing {
 
 }
 
-section#pricing>div.btn-pricing>button.btn-monthly {
+button.btn-active {
     font-family: "Urbanist", serif;
     font-size: 1.3em;
     background-color: #1A3129;
@@ -327,7 +327,7 @@ section#pricing>div.btn-pricing>button.btn-monthly {
     border: none;
 }
 
-section#pricing>div.btn-pricing>button.btn-yearly {
+button.btn-inactive {
     font-family: "Urbanist", serif;
     font-size: 1.3em;
     background-color: white;
@@ -337,12 +337,16 @@ section#pricing>div.btn-pricing>button.btn-yearly {
     border: none;
 }
 
-section#pricing>div.btn-pricing>button.btn-yearly:hover {
+button.btn-active:hover, button.btn-inactive:hover{
+    cursor: pointer;
+}
+
+/* section#pricing>div.btn-pricing>button.btn-yearly:hover {
     background-color: #1A3129;
     color: white;
     cursor: pointer;
 
-}
+} */
 
 section#pricing>article.pricing-container {
     display: grid;
@@ -377,7 +381,14 @@ section#pricing>article.pricing-container>div.pricing-item>p {
     font-weight: 400;
     text-align: start;
     margin: 10px 0px;
+}
 
+section#pricing>article.pricing-container>div.pricing-item>p.pricing-monthly {
+  display: inline-block;
+}
+
+section#pricing>article.pricing-container>div.pricing-item>p.pricing-yearly {
+    display: none;
 }
 
 section#pricing>article.pricing-container>div.pricing-item>p.pricing-monthly>span {
@@ -385,7 +396,13 @@ section#pricing>article.pricing-container>div.pricing-item>p.pricing-monthly>spa
     color: #1A3129;
     font-weight: bold;
     font-size: 2.5em;
+}
 
+section#pricing>article.pricing-container>div.pricing-item>p.pricing-yearly>span {
+    font-family: "Urbanist", serif;
+    color: #1A3129;
+    font-weight: bold;
+    font-size: 2.5em;
 }
 
 section#pricing>article.pricing-container>div.pricing-item>button {
@@ -397,14 +414,12 @@ section#pricing>article.pricing-container>div.pricing-item>button {
     border-radius: 10px;
     padding: 10px 20px;
     width: 90%;
-
 }
 
 section#pricing>article.pricing-container>div.pricing-item>button:hover {
     background-color: #1A3129;
     color: white;
     cursor: pointer;
-
 }
 
 /* footer */
@@ -547,7 +562,6 @@ section#apresentation-about {
     align-items: center;
     background-color: white;
     width: 100%;
-    
 }
 
 section#apresentation-about>div.text-apresentation-about {
@@ -613,7 +627,6 @@ section#container-our-story>div.card-container {
     align-items: center;
     width: 100%;
     background-color: white;
-
 }
 
 section#container-our-story>div.card-container>div.card {
@@ -658,7 +671,6 @@ section#container-our-story>div.card-container>div.card>div.card-text {
     justify-items: flex-start;
     align-content: center;
     overflow: hidden;
-
 }
 
 
@@ -681,7 +693,6 @@ section#container-our-story>div.card-container>div.card>div.card-text>p {
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
-
 }
 
 section#container-our-story>div.card-container>div.card>div.card-text>p.date {

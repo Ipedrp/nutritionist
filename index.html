@@ -190,8 +190,8 @@
         <p>Descrevemos nossas opções flexíveis e acessíveis para apoiá-lo em sua jornada para uma saúde e nutrição
             ideais. <br> Acreditamos que todos merecem acesso a orientação e recursos nutricionais personalizados</p>
         <div class="btn-pricing">
-            <button class="btn-monthly">Mensal</button>
-            <button class="btn-yearly">Anual</button>
+            <button class="btn-monthly btn-active">Mensal</button>
+            <button class="btn-yearly btn-inactive">Anual</button>
         </div>
         <p>Economize 50% anualmente</p>
         <article class="pricing-container">
@@ -201,6 +201,7 @@
                 <p>Comece sua jornada de saúde com nosso Plano Básico. Inclui treinamento nutricional personalizado,
                     acesso ao nosso aplicativo, assistência no planejamento de refeições e suporte por e-mail.</p>
                 <p class="pricing-monthly"><span>R$49</span>/mês</p>
+                <p class="pricing-yearly"><span>R$398</span>/ano</p>
                 <button>Escolha o plano</button>
             </div>
             <div class="pricing-item">
@@ -209,6 +210,7 @@
                 <p>Atualize para nosso plano Premium para obter recursos aprimorados. Além do Plano Básico, você
                     receberá videoconsultas, suporte prioritário e recomendações de receitas personalizadas.</p>
                 <p class="pricing-monthly"><span>R$79</span>/mês</p>
+                <p class="pricing-yearly"><span>R$698</span>/ano</p>
                 <button>Escolha o plano</button>
             </div>
             <div class="pricing-item">
@@ -218,6 +220,7 @@
                     Aproveite todos os recursos do Plano Premium, além de suporte por chat 24 horas por dia, 7 dias por
                     semana e workshops exclusivos.</p>
                 <p class="pricing-monthly"><span>R$99</span>/mês</p>
+                <p class="pricing-yearly"><span>R$1098</span>/ano</p>
                 <button>Escolha o plano</button>
             </div>
         </article>
@@ -239,7 +242,8 @@
             </menu>
             <div class="to-top-footer">
                 <p>Voltar para o topo</p>
-                <div class="container-image-footer"><img src="imagens/icon-set.png" alt="icone de seta para cima" onclick="scrollToTo()"></div>
+                <div class="container-image-footer"><img src="imagens/icon-set.png" alt="icone de seta para cima"
+                        onclick="scrollToTo()"></div>
             </div>
         </div>
         <div class="footer-footer">
@@ -262,6 +266,14 @@
     </footer>
 
     <script>
+
+        function scrollToTo() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+
         const iconMenu = document.getElementById("iconMenu");
         const menuList = document.getElementById("menuList");
 
@@ -286,24 +298,24 @@
 
         const btnMonthly = document.querySelector('.btn-monthly');
         const btnYearly = document.querySelector('.btn-yearly');
+        const pricingMonthly = document.querySelectorAll('.pricing-monthly');
+        const pricingYearly = document.querySelectorAll('.pricing-yearly');
 
-        btnYearly.addEventListener('mouseover', () => {
-            btnMonthly.style.backgroundColor = 'white';
-            btnMonthly.style.color = '#1A3129';
-            btnMonthly.style.cursor = 'pointer'
-        });
+        function togglePricing(isYearly) {
+            btnMonthly.classList.toggle('btn-active', !isYearly);
+            btnMonthly.classList.toggle('btn-inactive', isYearly);
+            btnYearly.classList.toggle('btn-active', isYearly);
+            btnYearly.classList.toggle('btn-inactive', !isYearly);
 
-        btnYearly.addEventListener('mouseout', () => {
-            btnMonthly.style.backgroundColor = '#1A3129';
-            btnMonthly.style.color = 'white';
-        });
-
-        function scrollToTo() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            })
+            pricingMonthly.forEach(item => item.style.display = isYearly ? 'none' : 'inline-block');
+            pricingYearly.forEach(item => item.style.display = isYearly ? 'inline-block' : 'none');
         }
+
+
+        btnYearly.addEventListener('mouseenter', () => togglePricing(true));
+        btnMonthly.addEventListener('mouseenter', () => togglePricing(false));
+
+
     </script>
 </body>
 
