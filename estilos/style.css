@@ -1097,6 +1097,8 @@ section#plan>article.container-plan>div.card>div.card-footer>button:hover {
     cursor: pointer;
 }
 
+/* section table */
+
 section#table-features {
     background-color: rgba(211, 211, 211, 0.085);
     border: 1px solid rgba(26, 49, 41, 0.434);
@@ -1118,7 +1120,7 @@ section#table-features>div.container>table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 10px 0;
-    border-radius: 10px; 
+    border-radius: 10px;
 
 }
 
@@ -1140,6 +1142,7 @@ section#table-features>div.container>table>thead>tr>th {
 section#table-features>div.container>table>thead>tr>th:nth-child(1) {
     text-align: start;
 }
+
 section#table-features>div.container>table>tbody>tr>td:nth-child(1) {
     text-align: start;
 }
@@ -1151,36 +1154,155 @@ section#table-features>div.container>table>tbody>tr>td {
     color: #484844ff;
     font-size: 0.9em;
     font-weight: 500;
-    border-bottom: 2px solid  rgba(211, 211, 211, 0.304);
-    border-right: 2px solid  rgba(211, 211, 211, 0.304);
+    border-bottom: 2px solid rgba(211, 211, 211, 0.304);
+    border-right: 2px solid rgba(211, 211, 211, 0.304);
 }
-section#table-features>div.container>table>tbody>tr>td:nth-child(4)  {
+
+section#table-features>div.container>table>tbody>tr>td:nth-child(4) {
     border-right: none;
 }
 
-section#table-features > div.container::-webkit-scrollbar {
-    height: 4px; 
+section#table-features>div.container::-webkit-scrollbar {
+    height: 4px;
 }
 
-section#table-features > div.container::-webkit-scrollbar-track {
-    background: #ddd; 
+section#table-features>div.container::-webkit-scrollbar-track {
+    background: #ddd;
     border-radius: 10px;
 }
 
-section#table-features > div.container::-webkit-scrollbar-thumb {
-    background: #CBEA7B; 
+section#table-features>div.container::-webkit-scrollbar-thumb {
+    background: #CBEA7B;
     border-radius: 10px;
 }
 
-section#table-features > div.container::-webkit-scrollbar-thumb:hover {
-    background: #CBEA7B; 
+section#table-features>div.container::-webkit-scrollbar-thumb:hover {
+    background: #CBEA7B;
 }
 
-/* Para dispositivos móveis, garantir um scroll mais fluido */
-@media (max-width: 768px) {
-    section#table-features > div.container {
-        scroll-behavior: smooth; 
-        padding-bottom: 10px; 
-        -webkit-overflow-scrolling: touch; 
-    }
+
+/* section FAQ */
+
+section#faq {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+section#faq>div.text-content {
+    background-color: white;
+    margin: 2% auto;
+    text-align: center;
+}
+
+section#faq>div.text-content>h2 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 2.6em;
+    color: #1A3129;
+    margin: 10px 0px;
+}
+
+section#faq>div.text-content>p {
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+section#faq>div.others-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: white;
+    width: 90%;
+    gap: 20px;
+    margin: 4% auto;
+}
+
+section#faq>div.others-content>div.text-step {
+    background-color: rgba(211, 211, 211, 0.085);
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    border-radius: 10px;
+    flex: 3;
+    min-width: 200px;
+
+}
+
+section#faq>div.others-content>div.text-step>div.step-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+section#faq>div.others-content>div.text-step>div.step-header >h3 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #1A3129;
+
+}
+
+section#faq>div.others-content>div.text-step>p {
+    display: none;
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0px 20px;
+    line-height: 30px;
+
+}
+
+
+section#faq>div.others-content>div.ask {
+    background-color: rgba(211, 211, 211, 0.085);
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    justify-items: center;
+    padding: 20px;
+
+}
+
+section#faq>div.others-content>div.ask>img {
+    width: 90px;
+    margin: 15px 0px;
+
+}
+section#faq>div.others-content>div.ask>h3 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #1A3129;
+    margin: 10px 0px;
+
+}
+
+section#faq>div.others-content>div.ask>p {
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+}
+section#faq>div.others-content>div.ask>button {
+    border: none;
+    background-color: #1A3129;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-family: "Urbanist", serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+}
+section#faq>div.others-content>div.ask>button:hover {
+    background-color: #CBEA7B;
+    color: #1A3129;
+    cursor: pointer;
+   
 }

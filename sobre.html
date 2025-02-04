@@ -212,20 +212,20 @@
 
         function mudouTamanho() {
             if (window.innerWidth <= 700) {
-                iconMenu.style.display = "block"; // Exibe o ícone do menu
-                menuList.style.display = "none"; // Oculta o menu por padrão
+                iconMenu.style.display = "block"; 
+                menuList.style.display = "none"; 
             } else {
-                iconMenu.style.display = "none"; // Oculta o ícone
-                menuList.style.display = "flex"; // Mostra o menu completo
+                iconMenu.style.display = "none";
+                menuList.style.display = "flex"; 
             }
         }
 
         function clicouNoIcone() {
-            // Alterna a exibição do menu
+            
             if (menuList.style.display === "none" || menuList.style.display === "") {
-                menuList.style.display = "flex"; // Mostra o menu
+                menuList.style.display = "flex"; 
             } else {
-                menuList.style.display = "none"; // Oculta o menu
+                menuList.style.display = "none"; 
             }
         }
 

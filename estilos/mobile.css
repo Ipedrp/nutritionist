@@ -418,7 +418,7 @@
         right: -20px;
         width: 120px;
         height: auto;
-        
+
     }
 
     section#proud>div.text {
@@ -443,6 +443,31 @@
     section#proud>div.button>button {
         width: 100%;
     }
+
+    /* section table */
+    section#table-features>div.container {
+        scroll-behavior: smooth;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* section faq */
+
+    section#faq>div.others-content>div.text-step>div.step-header {
+        padding: 0px;
+        margin: 20px 10px;
+    }
+
+    section#faq>div.others-content>div.text-step>div.step-header> img{
+        width: 30px;
+        height: 30px;
+    }
+
+    section#faq>div.others-content>div.text-step>p {
+        text-align: justify;
+    
+    }
+
 
 
 }
