@@ -971,30 +971,32 @@ section#plan>article.container-plan {
     margin-top: 30px;
 }
 
-section#plan > article.container-plan > div.card {
+section#plan>article.container-plan>div.card {
     width: 30%;
     min-width: 300px;
     height: 100%;
     background-color: rgba(211, 211, 211, 0.085);
-    border: 1px solid rgba(26, 49, 41, 0.434);   
+    border: 1px solid rgba(26, 49, 41, 0.434);
     border-radius: 10px;
     padding: 40px;
 }
 
-section#plan > article.container-plan > div.card> div.card-header {
+section#plan>article.container-plan>div.card>div.card-header {
     width: 100%;
     max-height: 15%;
     margin: 12px 0px;
 
 }
-section#plan > article.container-plan > div.card> div.card-header> h2 {
+
+section#plan>article.container-plan>div.card>div.card-header>h2 {
     text-align: start;
     font-family: "Urbanist", serif;
     color: #1A3129;
     font-size: 1.5em;
 
 }
-section#plan > article.container-plan > div.card> div.card-header> p{
+
+section#plan>article.container-plan>div.card>div.card-header>p {
     font-family: "Urbanist", serif;
     color: #484844ff;
     font-size: 1em;
@@ -1003,7 +1005,8 @@ section#plan > article.container-plan > div.card> div.card-header> p{
     margin: 10px 0px;
 
 }
-section#plan > article.container-plan > div.card> div.card-main {
+
+section#plan>article.container-plan>div.card>div.card-main {
     width: 100%;
     max-height: 65%;
     background-color: #E5F5BD;
@@ -1012,7 +1015,8 @@ section#plan > article.container-plan > div.card> div.card-main {
     margin: 12px 0px;
     padding: 5px;
 }
-section#plan > article.container-plan > div.card> div.card-main> p {
+
+section#plan>article.container-plan>div.card>div.card-main>p {
     font-family: "Urbanist", serif;
     color: #484844ff;
     font-size: 0.9em;
@@ -1023,27 +1027,29 @@ section#plan > article.container-plan > div.card> div.card-main> p {
     padding: 0px 10px 10px 10px;
 }
 
-section#plan > article.container-plan > div.card> div.card-footer {
+section#plan>article.container-plan>div.card>div.card-footer {
     width: 100%;
     max-height: 30%;
-    margin: 12px 0px; 
+    margin: 12px 0px;
 }
 
-section#plan > article.container-plan > div.card> div.card-footer> div.warning {
+section#plan>article.container-plan>div.card>div.card-footer>div.warning {
     background-color: #1A3129;
     border-radius: 10px;
     padding: 10px;
     margin: 7px 0px;
 
 }
-section#plan > article.container-plan > div.card> div.card-footer> div.warning> p {
+
+section#plan>article.container-plan>div.card>div.card-footer>div.warning>p {
     font-family: "Urbanist", serif;
     color: white;
     font-size: 1em;
     font-weight: 400;
     line-height: 22px;
 }
-section#plan > article.container-plan > div.card> div.card-footer> p {
+
+section#plan>article.container-plan>div.card>div.card-footer>p {
     font-family: "Urbanist", serif;
     color: #484844ff;
     font-size: 1em;
@@ -1052,27 +1058,29 @@ section#plan > article.container-plan > div.card> div.card-footer> p {
     margin: 8px 0px;
 }
 
-section#plan > article.container-plan > div.card> div.card-footer> p.pricing-monthly {
+section#plan>article.container-plan>div.card>div.card-footer>p.pricing-monthly {
     display: inline-block;
 }
 
-section#plan > article.container-plan > div.card> div.card-footer> p.pricing-yearly {
+section#plan>article.container-plan>div.card>div.card-footer>p.pricing-yearly {
     display: none;
 }
 
-section#plan > article.container-plan > div.card> div.card-footer>p.pricing-monthly>span {
+section#plan>article.container-plan>div.card>div.card-footer>p.pricing-monthly>span {
     font-family: "Urbanist", serif;
     color: #1A3129;
     font-weight: bold;
     font-size: 2.5em;
 }
-section#plan > article.container-plan > div.card> div.card-footer>p.pricing-yearly>span {
+
+section#plan>article.container-plan>div.card>div.card-footer>p.pricing-yearly>span {
     font-family: "Urbanist", serif;
     color: #1A3129;
     font-weight: bold;
     font-size: 2.5em;
 }
-section#plan > article.container-plan > div.card> div.card-footer>button {
+
+section#plan>article.container-plan>div.card>div.card-footer>button {
     font-family: "Urbanist", serif;
     background-color: #CBEA7B;
     color: white;
@@ -1082,9 +1090,97 @@ section#plan > article.container-plan > div.card> div.card-footer>button {
     padding: 10px 20px;
     width: 100%;
 }
-section#plan > article.container-plan > div.card> div.card-footer>button:hover {
+
+section#plan>article.container-plan>div.card>div.card-footer>button:hover {
     background-color: #1A3129;
     color: white;
     cursor: pointer;
 }
 
+section#table-features {
+    background-color: rgba(211, 211, 211, 0.085);
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    margin: 6% auto;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section#table-features>div.container {
+    background-color: rgba(211, 211, 211, 0.085);
+    width: 100%;
+    overflow-x: auto;
+
+}
+
+section#table-features>div.container>table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    border-radius: 10px; 
+
+}
+
+section#table-features>div.container>table>thead {
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+
+section#table-features>div.container>table>thead>tr>th {
+    padding: 20px;
+    background-color: #1A3129;
+    color: white;
+    border-radius: 10px;
+}
+
+section#table-features>div.container>table>thead>tr>th:nth-child(1) {
+    text-align: start;
+}
+section#table-features>div.container>table>tbody>tr>td:nth-child(1) {
+    text-align: start;
+}
+
+section#table-features>div.container>table>tbody>tr>td {
+    text-align: center;
+    padding: 20px;
+    font-family: "Urbanist", serif;
+    color: #484844ff;
+    font-size: 0.9em;
+    font-weight: 500;
+    border-bottom: 2px solid  rgba(211, 211, 211, 0.304);
+    border-right: 2px solid  rgba(211, 211, 211, 0.304);
+}
+section#table-features>div.container>table>tbody>tr>td:nth-child(4)  {
+    border-right: none;
+}
+
+section#table-features > div.container::-webkit-scrollbar {
+    height: 4px; 
+}
+
+section#table-features > div.container::-webkit-scrollbar-track {
+    background: #ddd; 
+    border-radius: 10px;
+}
+
+section#table-features > div.container::-webkit-scrollbar-thumb {
+    background: #CBEA7B; 
+    border-radius: 10px;
+}
+
+section#table-features > div.container::-webkit-scrollbar-thumb:hover {
+    background: #CBEA7B; 
+}
+
+/* Para dispositivos móveis, garantir um scroll mais fluido */
+@media (max-width: 768px) {
+    section#table-features > div.container {
+        scroll-behavior: smooth; 
+        padding-bottom: 10px; 
+        -webkit-overflow-scrolling: touch; 
+    }
+}
