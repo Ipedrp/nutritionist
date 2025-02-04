@@ -445,6 +445,7 @@
     }
 
     /* section table */
+
     section#table-features>div.container {
         scroll-behavior: smooth;
         padding-bottom: 10px;
@@ -466,6 +467,56 @@
     section#faq>div.others-content>div.text-step>p {
         text-align: justify;
     
+    }
+
+    /* Estilos para tela Contato */
+
+
+    header>div#container-contact>div.content>div.content-text>p {
+        margin: 20px 20px;
+    }
+
+    header>div#container-contact>div.contact-types {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-content: start;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        background-color: #1A3129;
+        margin-top: 10px;
+    
+    }
+    header>div#container-contact>div.contact-types> div.content-contact-types> img {
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    /* section form */
+
+    section#container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: rgb(251 251 251);
+        border-radius: 10px;
+        border: 1px solid rgba(26, 49, 41, 0.434);
+        width: 90%;
+        height: auto;
+        margin: 5% auto;
+        padding: 10px;
+    }
+
+    section#container>div.maps>div.group-icons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px 0px;
     }
 
 

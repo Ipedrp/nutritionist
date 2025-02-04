@@ -1236,7 +1236,8 @@ section#faq>div.others-content>div.text-step>div.step-header {
     justify-content: space-between;
     padding: 20px;
 }
-section#faq>div.others-content>div.text-step>div.step-header >h3 {
+
+section#faq>div.others-content>div.text-step>div.step-header>h3 {
     font-family: "Urbanist", serif;
     font-weight: bold;
     font-size: 1.2em;
@@ -1272,6 +1273,7 @@ section#faq>div.others-content>div.ask>img {
     margin: 15px 0px;
 
 }
+
 section#faq>div.others-content>div.ask>h3 {
     font-family: "Urbanist", serif;
     font-weight: bold;
@@ -1288,6 +1290,7 @@ section#faq>div.others-content>div.ask>p {
     font-weight: 500;
     text-align: center;
 }
+
 section#faq>div.others-content>div.ask>button {
     border: none;
     background-color: #1A3129;
@@ -1300,9 +1303,224 @@ section#faq>div.others-content>div.ask>button {
     font-weight: 500;
     text-align: center;
 }
+
 section#faq>div.others-content>div.ask>button:hover {
     background-color: #CBEA7B;
     color: #1A3129;
     cursor: pointer;
-   
+
 }
+
+
+header>div#container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251 251 251);
+    border-radius: 10px;
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+}
+
+header>div#container-contact>div.content>div.content-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imagens/abstract03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px
+}
+
+header>div#container-contact>div.content>div.content-text {
+    text-align: center;
+    margin-top: 30px;
+    height: 18%;
+}
+
+header>div#container-contact>div.content>div.content-text>h2 {
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #1A3129;
+    margin: 10px 0px;
+}
+
+header>div#container-contact>div.content>div.content-text>p {
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+header>div#container-contact>div.contact-types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 300px;
+    background-color: #1A3129;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+header>div#container-contact>div.contact-types>div.content-contact-types {
+    flex: 1;
+    text-align: center;
+    background-color: #234338;
+    border-radius: 10px;
+    padding: 3%;
+
+}
+
+header>div#container-contact>div.contact-types>div.content-contact-types>img {
+    width: 30px;
+    height: 30px;
+}
+
+header>div#container-contact>div.contact-types>div.content-contact-types>p {
+    font-family: "Urbanist", serif;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 20px;
+
+}
+
+section#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: rgb(251 251 251);
+    border-radius: 10px;
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    padding: 40px;
+}
+
+section#container>div.form {
+    background-color: rgb(251 251 251);
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+section#container>div.form>form>div.form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+section#container>div.form>form>div.form-group>div {
+    flex: 1;
+}
+
+section#container>div.form>form>div.form-group>div>label {
+    display: block;
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 10px 0px;
+}
+
+section#container>div.form>form>div.form-group>div>input {
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    border-radius: 5px;
+    background-color: #DCF1A7;
+    padding: 10px;
+    width: 100%;
+}
+
+section#container>div.form>form>label {
+    display: block;
+    font-family: "Urbanist", serif;
+    color: rgb(23, 23, 22);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 10px 0px;
+}
+
+section#container>div.form>form>input {
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    border-radius: 5px;
+    background-color: #DCF1A7;
+    padding: 10px;
+    width: 100%;
+
+}
+
+section#container>div.form>form>input[type="submit"] {
+    border: none;
+    background-color: #1A3129;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-family: "Urbanist", serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+section#container>div.form>form>input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #CBEA7B;
+    color: #1A3129;
+    font-weight: bold;
+
+
+}
+
+section#container>div.form>form>textarea {
+    border: 1px solid rgba(26, 49, 41, 0.434);
+    border-radius: 5px;
+    background-color: #DCF1A7;
+    padding: 10px;
+    width: 100%;
+
+}
+
+section#container>div.maps {
+    background-color: rgb(251 251 251);
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section#container>div.maps>iframe {
+    width: 100%;
+    height: 80%;
+}
+section#container>div.maps>div.group-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 10px 0px;
+}
+section#container>div.maps>div.group-icons> img{
+    width: 40px;
+    height: 40px;
+}
+
